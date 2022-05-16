@@ -1,0 +1,7 @@
+{
+    "env" : {
+        "MongoPassword": "Hstore1230!",
+        "JWT_KEY":"secretjwts",
+        "EmailPassword":"hstore"
+    }
+}
