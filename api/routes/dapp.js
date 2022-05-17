@@ -14,6 +14,8 @@ router.get("/", (req, res, next)=>{
     .then(docs =>{
         res.status(200).json({
             count: docs.length,
+            status:"OK",
+            message: 'Dapps fetched successfully',
             dapp: docs.map(doc =>{
                 return {
                     _id: doc._id,
