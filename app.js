@@ -10,6 +10,7 @@ const compression = require("compression");
 
 const userRoutes = require("./api/routes/user");
 const dappRoutes = require("./api/routes/dapp");
+const cappRoutes = require("./api/routes/capps");
 const feedbackRoutes = require("./api/routes/feedback");
 const notificationRoutes = require("./api/routes/notification");
 const generalRoutes = require("./api/routes/general");
@@ -39,6 +40,7 @@ app.set('view engine', 'ejs');
 
 app.use("/user", userRoutes);
 app.use("/dapps", dappRoutes);
+app.use("/capps", cappRoutes);
 app.use("/feedback", feedbackRoutes);
 app.use("/notification", notificationRoutes)
 app.use("/general", generalRoutes)
